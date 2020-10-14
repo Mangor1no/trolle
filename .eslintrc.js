@@ -1,13 +1,10 @@
 const prettier = require('./.prettierrc.js');
 module.exports = {
-  root: true,
+  env: {
+    browser: true,
+  },
   parser: 'babel-eslint',
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
   plugins: ['prettier', 'import'],
   rules: {
     'react/jsx-filename-extension': [
